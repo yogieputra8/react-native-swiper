@@ -299,7 +299,7 @@ export default class extends Component {
       }
     }
 
-    this.setState(state)
+    Platform.OS !== 'ios' && this.setState(state)
   }
 
   loopJump = () => {
